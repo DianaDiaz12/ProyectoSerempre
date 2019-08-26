@@ -16,7 +16,7 @@ public class Tareas {
     private int tiempo_estimado;
     private int tiempo_trabajo;
     private String nom_encargado;
-    public int tiempo_restante;
+    private int tiempo_restante;
 
     public String getTitulo() {
         return titulo;
