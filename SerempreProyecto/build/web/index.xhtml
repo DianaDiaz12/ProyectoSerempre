@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+      
+        <h:panelGrid columns="2">
+            <p:outputLabel value="Titulo"/>
+            <p:inputText value="#{asignarTarea.objTarea.titulo}"/>
+            <p:outputLabel value="Descripcion"/>
+            <p:inputText value="#{asignarTarea.objTarea.descripcion}"/>
+            <p:outputLabel value="Tiempo estimado"/>
+            <p:inputText value="#{asignarTarea.objTarea.tiempo_estimado}"/>
+            <p:outputLabel value="Tiempo trabajado"/>
+            <p:inputText value="#{asignarTareas.objTarea.tiempo_trabajo}"/>
+            <p:outputLabel value="Nombre del Encargado"/>
+            <p:inputText value="#{asignarTarea.objTarea.nom_encargado}"/>
+            <p:commandButton   value="Agregar" actionListener="#{asignarTarea.crearTareas()}" />
+        </h:panelGrid>
+        
+        
+    </h:body>
+</html>
+
